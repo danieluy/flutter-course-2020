@@ -11,7 +11,7 @@ class AppDrawer extends StatelessWidget {
             title: Text('My Shop'),
             automaticallyImplyLeading: false,
           ),
-          Divider(),
+          // Divider(),
           ListTile(
             leading: Icon(Icons.shop),
             title: Text('Shop'),
@@ -25,6 +25,15 @@ class AppDrawer extends StatelessWidget {
             onTap: () {
               Navigator.of(context)
                   .pushReplacementNamed(OrdersScreen.ROUTE_NAME);
+            },
+          ),
+          // Divider(),
+          ListTile(
+            leading: Icon(Icons.edit),
+            title: Text('Manage Products'),
+            onTap: () {
+              Navigator.of(context)
+                  .pushReplacementNamed(UserProductsScreen.ROUTE_NAME);
             },
           ),
         ],
